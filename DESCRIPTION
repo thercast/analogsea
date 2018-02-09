@@ -4,12 +4,14 @@ Description: Provides a set of functions for interacting with the 'Digital
     Ocean' API at <https://developers.digitalocean.com/documentation/v2>, including
     creating images, destroying them, rebooting, getting details on regions, and
     available images.
-Version: 0.6.0
+Version: 0.6.0.9100
 Authors@R: c(
     person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com"),
     person("Hadley", "Wickham", role = "aut", email = "hadley@rstudio.com"),
     person("Winston", "Chang", role = "aut", email = "winston@stdout.org"),
     person("Bob", "Rudis", role = "ctb", email = "bob@rudis.net"),
+    person("Bryce", "Mecum", role = "ctb", email = "brycemecum@gmail.com",
+           comment = c("ORCID" = "0000-0002-0381-3766")),
     person("RStudio", role = "cph")
     )
 License: MIT + file LICENSE
@@ -23,9 +25,11 @@ Imports:
     httr (>= 1.2.0),
     jsonlite (>= 1.1),
     magrittr,
-    yaml
+    yaml,
+    aws.s3 (>= 0.3.3)
 Suggests:
     roxygen2 (>= 6.0.1),
     testthat,
-    knitr
+    knitr,
+    xml2
 RoxygenNote: 6.0.1
